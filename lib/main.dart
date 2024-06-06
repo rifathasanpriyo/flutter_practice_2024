@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 'Stand for humanity and help families in Gaza',
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 25,),
             Text('Total Amount',style: TextStyle( 
               fontSize: 20,
               fontWeight: FontWeight.bold,
