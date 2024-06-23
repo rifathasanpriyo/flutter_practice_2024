@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/question2.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class question2 extends StatefulWidget {
+  const question2({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<question2> createState() => _question2State();
 }
 
-class _HomePageState extends State<HomePage> {
+class _question2State extends State<question2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "What is a correct syntax to output Hello World in C?",
+                      "How do you insert COMMENTS in C code??",
                       style: TextStyle(fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -79,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                          "printf",
+                          "//",
                           style: TextStyle(fontSize: 30,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -103,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                          "cout",
+                          "**",
                           style: TextStyle(fontSize: 30,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -118,9 +117,7 @@ class _HomePageState extends State<HomePage> {
                 
               ),
               SizedBox(height: 10,),
-             ElevatedButton(onPressed: (){ 
-              Navigator.push(context, MaterialPageRoute(builder:(context)=>question2() ));
-             }, child: Text("Click Next",style: TextStyle( 
+             ElevatedButton(onPressed: (){}, child: Text("Click Next",style: TextStyle( 
               fontSize: 20
              ),)) 
         ],
