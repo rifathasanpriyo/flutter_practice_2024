@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/first_page.dart';
+
 
 class ButtonNavigation extends StatefulWidget {
   const ButtonNavigation({super.key});
@@ -11,7 +11,7 @@ class ButtonNavigation extends StatefulWidget {
 class _ButtonNavigationState extends State<ButtonNavigation> {
   int index = 0;
   List<Widget> listMenu = [
-    FirstPage(),
+    Icon(Icons.home, size: 150),
     Icon(Icons.favorite, size: 150),
     Icon(Icons.person, size: 150),
   ];
@@ -20,18 +20,7 @@ class _ButtonNavigationState extends State<ButtonNavigation> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      drawer: Drawer( 
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column( 
-            children: [ 
-              CircleAvatar(backgroundColor: Colors.brown,
-              radius: 100,
-              )
-            ],
-          ),
-        ),
-      ),
+      
       body: Center(child: listMenu[index]),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
@@ -42,7 +31,7 @@ class _ButtonNavigationState extends State<ButtonNavigation> {
         },
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home,size: 100,),
             label: 'Home',
           ),
           BottomNavigationBarItem(
